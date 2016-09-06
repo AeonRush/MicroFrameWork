@@ -4,7 +4,7 @@ namespace HttpFoundation;
 
 /**
  * Class Request
- * TODO Зарефакторить
+ * TODO Р—Р°СЂРµС„Р°РєС‚РѕСЂРёС‚СЊ
  * @package HttpFoundation
  */
 class Request {

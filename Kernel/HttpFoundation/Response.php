@@ -6,7 +6,7 @@ use Kernel\View;
 
 /**
  * Class Response
- * TODO Зарефакторить
+ * TODO Р—Р°СЂРµС„Р°РєС‚РѕСЂРёС‚СЊ
  * @package HttpFoundation
  */
 class Response {

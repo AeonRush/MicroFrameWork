@@ -4,18 +4,18 @@ namespace Kernel;
 
 /**
  * Class FS
- * Класс для работы с Файловой системой
+ * РљР»Р°СЃСЃ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ Р¤Р°Р№Р»РѕРІРѕР№ СЃРёСЃС‚РµРјРѕР№
  * @package Kernel
  */
 final class FS {
 
-    // Пути
+    // РџСѓС‚Рё
     private static $ROOT;
     private static $KERNEL;
     private static $USER_LAND;
 
     /**
-     * Инициализация
+     * РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
      */
     public static function init() {
         self::$ROOT = realpath(dirname(__DIR__));
@@ -24,7 +24,7 @@ final class FS {
     }
 
     /**
-     * Объединение путей
+     * РћР±СЉРµРґРёРЅРµРЅРёРµ РїСѓС‚РµР№
      * @param $path1
      * @param $path2
      * @return string
@@ -34,7 +34,7 @@ final class FS {
     }
 
     /**
-     * Получение пути Root
+     * РџРѕР»СѓС‡РµРЅРёРµ РїСѓС‚Рё Root
      * @param null $path
      * @return string
      */
@@ -43,7 +43,7 @@ final class FS {
     }
 
     /**
-     * Получение пути Kernel
+     * РџРѕР»СѓС‡РµРЅРёРµ РїСѓС‚Рё Kernel
      * @param null $path
      * @return string
      */
@@ -52,7 +52,7 @@ final class FS {
     }
 
     /**
-     * Получение пути UserLand
+     * РџРѕР»СѓС‡РµРЅРёРµ РїСѓС‚Рё UserLand
      * @param null $path
      * @return string
      */
@@ -61,7 +61,7 @@ final class FS {
     }
 
     /**
-     * Поиск файла
+     * РџРѕРёСЃРє С„Р°Р№Р»Р°
      * @param null $filename
      * @param null $path
      * @return \RegexIterator
@@ -84,5 +84,5 @@ final class FS {
 
 }
 
-// Автоинициализация
+// РђРІС‚РѕРёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
 FS::init();

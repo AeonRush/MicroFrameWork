@@ -1,12 +1,12 @@
 <?php
 
 /**
- * Åñëè ôóíêöèè http_response_code íåò, îïðåäåëÿåì å¸
+ * Ð•ÑÐ»Ð¸ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ http_response_code Ð½ÐµÑ‚, Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÐ¼ ÐµÑ‘
  * Thanks to http://php.net/manual/ru/function.http-response-code.php#107261
  */
 if (!function_exists('http_response_code')) {
     /**
-     * Êîä îòâåòà óñòàíàâëèâàåòñÿ ñ ïîìîùüþ îïöèîíàëüíîãî ïàðàìåòðà code
+     * ÐšÐ¾Ð´ Ð¾Ñ‚Ð²ÐµÑ‚Ð° ÑƒÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ÑÑ Ñ Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒÑŽ Ð¾Ð¿Ñ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ð¾Ð³Ð¾ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð° code
      * @param null $code
      *
      * @return int|null
@@ -66,7 +66,7 @@ if (!function_exists('http_response_code')) {
 };
 
 /**
- * Èñïðàâëåíèå íåâåðíîãî ðàñ÷åòà êîíòðîëüíîé ñóììû CRC32 â PHP
+ * Ð˜ÑÐ¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ Ð½ÐµÐ²ÐµÑ€Ð½Ð¾Ð³Ð¾ Ñ€Ð°ÑÑ‡ÐµÑ‚Ð° ÐºÐ¾Ð½Ñ‚Ñ€Ð¾Ð»ÑŒÐ½Ð¾Ð¹ ÑÑƒÐ¼Ð¼Ñ‹ CRC32 Ð² PHP
  * @param $v
  * @return int
  */
@@ -75,7 +75,7 @@ function crc32_fix($v){
     return ($v < 0) ? ($v + 4294967296) : $v;
 };
 /**
- * Î÷èñòêà ìàññèâà îò ïóñòûõ ýëåìåíòîâ
+ * ÐžÑ‡Ð¸ÑÑ‚ÐºÐ° Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð¾Ñ‚ Ð¿ÑƒÑÑ‚Ñ‹Ñ… ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð²
  * @param $a
  * @return array
  */
@@ -89,19 +89,19 @@ function array_clean($a) {
 }
 
 /**
- * Î÷èñòêà ñòðîêè
+ * ÐžÑ‡Ð¸ÑÑ‚ÐºÐ° ÑÑ‚Ñ€Ð¾ÐºÐ¸
  * @param $str
  * @return string
  */
 function strclean(&$str){
     $str = strip_tags($str);
-    /// $str = str_replace('¹', '_', $str);
+    /// $str = str_replace('â„–', '_', $str);
     $str = mb_ereg_replace('\W+', ' ',  $str );
     return $str;
 };
 
 /**
- * Àäåêâàòíîå îòîáðàæåíèå JSON â êîäèðîâêå UTF-8
+ * ÐÐ´ÐµÐºÐ²Ð°Ñ‚Ð½Ð¾Ðµ Ð¾Ñ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ JSON Ð² ÐºÐ¾Ð´Ð¸Ñ€Ð¾Ð²ÐºÐµ UTF-8
  * @param $value
  * @return mixed
  */
@@ -114,7 +114,7 @@ function json_encode_utf8($value){
 };
 
 /**
- * Óäàëåíèå äåðåâà êàòàëîãîâ
+ * Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ð´ÐµÑ€ÐµÐ²Ð° ÐºÐ°Ñ‚Ð°Ð»Ð¾Ð³Ð¾Ð²
  * @param $dir
  * @return bool
  */

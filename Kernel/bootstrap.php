@@ -15,23 +15,23 @@ spl_autoload_register(function($name){
 
     $name .= '.php';
 
-    // Классы от Kernel
+    // РљР»Р°СЃСЃС‹ РѕС‚ Kernel
     if($path = \Kernel\FS::getKernel($name)) {
         return include($path);
     }
 
-    // Классы от Root
+    // РљР»Р°СЃСЃС‹ РѕС‚ Root
     if($path = \Kernel\FS::getRoot($name)) {
         return include($path);
     }
 
-    // Классы от UserLand
+    // РљР»Р°СЃСЃС‹ РѕС‚ UserLand
     if($path = \Kernel\FS::getUserLand($name)) {
         return include($path);
     }
 });
 
-// Подключаем Composer autoload, если таковой есть
+// РџРѕРґРєР»СЋС‡Р°РµРј Composer autoload, РµСЃР»Рё С‚Р°РєРѕРІРѕР№ РµСЃС‚СЊ
 if(file_exists('../vendor/autoload.php')){
     include('../vendor/autoload.php');
 }

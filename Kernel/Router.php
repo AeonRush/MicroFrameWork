@@ -8,7 +8,7 @@ use HttpFoundation\Response;
 
 /**
  * Class Router
- * TODO Çàðåôàêòîðèòü è îñòàâèòü òîëüêî V2 + ñäåëàòü ãåíåðàöèþ URL
+ * TODO Ð—Ð°Ñ€ÐµÑ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ñ‚ÑŒ Ð¸ Ð¾ÑÑ‚Ð°Ð²Ð¸Ñ‚ÑŒ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ V2 + ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ Ð³ÐµÐ½ÐµÑ€Ð°Ñ†Ð¸ÑŽ URL
  * @package Kernel
  */
 final class Router {
@@ -47,7 +47,7 @@ final class Router {
     }
 
     /**
-     * TODO Íàïèñàòü Ãåíåðàöèþ URL
+     * TODO ÐÐ°Ð¿Ð¸ÑÐ°Ñ‚ÑŒ Ð“ÐµÐ½ÐµÑ€Ð°Ñ†Ð¸ÑŽ URL
      */
     public function routeV2() {
         $request_uri = $this->REQUEST_URI;

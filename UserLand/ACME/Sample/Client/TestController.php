@@ -12,8 +12,8 @@ use HttpFoundation\Request;
 class TestController extends Controller {
 
     /**
-     * Тестовый Method
-     * !!! Маршрут ДОЛЖЕН начинатся с @Route
+     * РўРµСЃС‚РѕРІС‹Р№ Method
+     * !!! РњР°СЂС€СЂСѓС‚ Р”РћР›Р–Р•Рќ РЅР°С‡РёРЅР°С‚СЃСЏ СЃ @Route
      * @Route("{{name}}.{{extension}}", {"extension" : {"pattern" : "html|json"}, "name" : {"pattern" : ".+"}, "test" : {"test" : 1, "test2" : 2}})
      * @param Request $request
      * @return \HttpFoundation\Response

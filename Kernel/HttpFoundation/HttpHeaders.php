@@ -14,7 +14,7 @@ namespace HttpFoundation {
     class HttpHeaders {
 
         /**
-         * Перемещено навсегда
+         * РџРµСЂРµРјРµС‰РµРЅРѕ РЅР°РІСЃРµРіРґР°
          * @param $to
          */
         public static function m301($to) {
@@ -24,8 +24,8 @@ namespace HttpFoundation {
         }
 
         /**
-         * Запросо ошибочен
-         * @param bool $continue   продолжить выполнение скрипта
+         * Р—Р°РїСЂРѕСЃРѕ РѕС€РёР±РѕС‡РµРЅ
+         * @param bool $continue   РїСЂРѕРґРѕР»Р¶РёС‚СЊ РІС‹РїРѕР»РЅРµРЅРёРµ СЃРєСЂРёРїС‚Р°
          */
         function m400($continue = false){
             http_response_code(400);
@@ -35,8 +35,8 @@ namespace HttpFoundation {
         }
 
         /**
-         * Записывает код 404 в заголовок ответа
-         * @param bool $continue   продолжить выполнение скрипта
+         * Р—Р°РїРёСЃС‹РІР°РµС‚ РєРѕРґ 404 РІ Р·Р°РіРѕР»РѕРІРѕРє РѕС‚РІРµС‚Р°
+         * @param bool $continue   РїСЂРѕРґРѕР»Р¶РёС‚СЊ РІС‹РїРѕР»РЅРµРЅРёРµ СЃРєСЂРёРїС‚Р°
          */
         function msg404($continue = false){
             http_response_code(404);
@@ -46,8 +46,8 @@ namespace HttpFoundation {
         }
 
         /**
-         * Внутреняя ошибка сервера
-         * @param bool $continue   продолжить выполнение скрипта
+         * Р’РЅСѓС‚СЂРµРЅСЏСЏ РѕС€РёР±РєР° СЃРµСЂРІРµСЂР°
+         * @param bool $continue   РїСЂРѕРґРѕР»Р¶РёС‚СЊ РІС‹РїРѕР»РЅРµРЅРёРµ СЃРєСЂРёРїС‚Р°
          */
         function msg500($continue = false){
             http_response_code(500);
@@ -57,8 +57,8 @@ namespace HttpFoundation {
         }
 
         /**
-         * Внутреняя ошибка сервера
-         * @param bool $continue   продолжить выполнение скрипта
+         * Р’РЅСѓС‚СЂРµРЅСЏСЏ РѕС€РёР±РєР° СЃРµСЂРІРµСЂР°
+         * @param bool $continue   РїСЂРѕРґРѕР»Р¶РёС‚СЊ РІС‹РїРѕР»РЅРµРЅРёРµ СЃРєСЂРёРїС‚Р°
          */
         function msg503($continue = false){
             http_response_code(503);

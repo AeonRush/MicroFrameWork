@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Старый вариант написания Router'ов
+ * РЎС‚Р°СЂС‹Р№ РІР°СЂРёР°РЅС‚ РЅР°РїРёСЃР°РЅРёСЏ Router'РѕРІ
  */
 return [
     '^test\.(html)$' => "./Client/TestController::client?extension=$1",

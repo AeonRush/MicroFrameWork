@@ -6,7 +6,7 @@ use HttpFoundation\HttpError;
 
 /**
  * Class ErrorHandler
- * Класс для перехвата ошибок
+ * РљР»Р°СЃСЃ РґР»СЏ РїРµСЂРµС…РІР°С‚Р° РѕС€РёР±РѕРє
  * @package Kernel
  */
 class ErrorHandler {
@@ -28,7 +28,7 @@ class ErrorHandler {
     }
 
     /**
-     * Инициализация
+     * РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ
      * @param Kernel $kernel
      */
     private function init(Kernel $kernel) {
@@ -39,7 +39,7 @@ class ErrorHandler {
     }
 
     /**
-     * Перехват Exceptions
+     * РџРµСЂРµС…РІР°С‚ Exceptions
      * @param $exception
      */
     public function exceptionHandler(\Exception $exception) {
@@ -55,7 +55,7 @@ class ErrorHandler {
     }
 
     /**
-     * Обработчик shutdown
+     * РћР±СЂР°Р±РѕС‚С‡РёРє shutdown
      */
     public function shutdownHandler() {
         $lastError = error_get_last();
@@ -73,7 +73,7 @@ class ErrorHandler {
     }
 
     /**
-     * Обрабочик ошибок PHP
+     * РћР±СЂР°Р±РѕС‡РёРє РѕС€РёР±РѕРє PHP
      * @see http://php.net/manual/en/function.set-error-handler.php
      * @param $errno
      * @param $errstr
